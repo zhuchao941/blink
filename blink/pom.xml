@@ -37,11 +37,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
-		
+
 		<dependency>
-		    <groupId>org.mybatis.spring.boot</groupId>
-		    <artifactId>mybatis-spring-boot-starter</artifactId>
-		    <version>1.1.1</version>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.1.1</version>
 		</dependency>
 
 		<dependency>
@@ -50,16 +50,13 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
-<!-- 		<dependency>
-			<groupId>com.dianwoba</groupId>
-			<artifactId>user-service-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency> -->
-		
+		<!-- <dependency> <groupId>com.dianwoba</groupId> <artifactId>user-service-api</artifactId> 
+			<version>0.0.1-SNAPSHOT</version> </dependency> -->
+
 		<dependency>
 			<groupId>com.dianwoba</groupId>
 			<artifactId>blink-mapper</artifactId>
-			<version>0.0.1-SNAPSHOT</version>			
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
@@ -74,4 +71,20 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
