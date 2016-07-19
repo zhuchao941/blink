@@ -21,9 +21,7 @@ import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-import com.alibaba.dubbo.config.RegistryConfig;
 import com.dianwoba.redcliff.blink.entity.User;
 import com.dianwoba.redcliff.blink.mapper.UserMapper;
 import com.dianwoba.redcliff.blink.mapper.UserMapperExt;
@@ -45,9 +43,6 @@ public class UserController {
 	private String testKey;
 
 	@Resource
-	private RegistryConfig registryConfig;
-
-	@Resource
 	private JdbcTemplate jdbcTemplate;
 	
 	@Resource
@@ -65,7 +60,6 @@ public class UserController {
 	@RequestMapping("test")
 	@ResponseJson
 	public ModelMap test() {
-		System.out.println(registryConfig);
 		System.out.println(env.getProperty("num"));
 		System.out.println(testKey);
 		// DwdUser user = userProvider.findUserById(1);
