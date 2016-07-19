@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<exclusions>
+			<!-- <exclusions>
 				<exclusion>
 					<artifactId>logback-classic</artifactId>
 					<groupId>ch.qos.logback</groupId>
@@ -30,7 +30,7 @@
 					<artifactId>log4j-over-slf4j</artifactId>
 					<groupId>org.slf4j</groupId>
 				</exclusion>
-			</exclusions>
+			</exclusions> -->
 		</dependency>
 
 		<dependency>
@@ -67,6 +67,10 @@
 				<exclusion>
 					<groupId>log4j</groupId>
 					<artifactId>log4j</artifactId>
+				</exclusion>
+				<exclusion>
+					<artifactId>slf4j-log4j12</artifactId>
+					<groupId>org.slf4j</groupId>
 				</exclusion>
 			</exclusions>
 		</dependency>
