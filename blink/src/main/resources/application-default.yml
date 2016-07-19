@@ -1,0 +1,28 @@
+server:
+    port: 80
+    testkey: default
+num: ${random.int(10)}
+dubbo:
+    registry:
+        address: zookeeper://192.168.1.177:2181
+datasource:
+    a:
+        driverClassName: com.mysql.jdbc.Driver
+        jdbcUrl: jdbc:mysql://192.168.1.44:3908/user?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull
+        user: dev
+        password: dev3308$$
+    b:
+        driverClassName: com.mysql.jdbc.Driver
+        jdbcUrl: jdbc:mysql://192.168.1.44:3907/user?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull
+        user: dev
+        password: dev3306$$
+#spring: 
+#    datasource: 
+#        driverClassName: com.mysql.jdbc.Driver
+#        url: jdbc:mysql://192.168.1.44:3908/user?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull
+#        username: dev
+#        password: dev3308$$
+mybatis: 
+    mapperLocations: classpath*:mapper/*Mapper*.xml
+mybatis2: 
+    mapperLocations: classpath*:mapperb/*Mapper*.xml
