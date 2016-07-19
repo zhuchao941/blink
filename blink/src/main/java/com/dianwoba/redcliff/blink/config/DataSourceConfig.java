@@ -18,7 +18,7 @@ import com.mchange.v2.c3p0.DriverManagerDataSource;
  * @date 2016年7月15日 下午5:37:06
  * @description
  */
-@Configuration
+//@Configuration
 public class DataSourceConfig {
 
 	@ConfigurationProperties(prefix = "datasource.a")

@@ -71,7 +71,7 @@ import org.springframework.util.StringUtils;
  * @author Kazuki Shimizu
  * @author Eduardo Macarrón
  */
-@Configuration
+//@Configuration
 @EnableConfigurationProperties(MybatisProperties.class)
 @MapperScan(basePackages = { "com.dianwoba.redcliff.blink.mapper" }, sqlSessionFactoryRef = "aSqlSessionFactory")
 public class MybatisConfig {

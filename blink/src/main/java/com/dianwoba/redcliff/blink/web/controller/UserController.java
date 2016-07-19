@@ -35,7 +35,7 @@ import com.zhu.learn.tools.response.ResponseJson;
  * @date 2016年7月8日 下午4:44:28
  * @description
  */
-@RestController
+//@RestController
 public class UserController {
 
 	@Resource

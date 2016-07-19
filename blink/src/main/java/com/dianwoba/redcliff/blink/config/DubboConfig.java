@@ -17,7 +17,7 @@ import com.dianwoba.redcliff.user.provider.UserProvider;
  * @date 2016年7月9日 下午2:27:33
  * @description
  */
-@Configuration
+//@Configuration
 public class DubboConfig {
 
 	@ConfigurationProperties(prefix = "dubbo.registry")
