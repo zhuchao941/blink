@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
 MAINTAINER zhuchao 339357762@qq.com
-COPY usr/bin/application /usr/bin/application
+COPY usr/bin/application.jar /usr/bin/application.jar
 EXPOSE 80
 CMD java -jar application.jar
