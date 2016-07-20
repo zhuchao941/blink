@@ -1,0 +1,4 @@
+FROM maven:3.3.3-jdk-8-onbuild
+MAINTAINER zhuchao 339357762@qq.com
+RUN mvn package
+RUN mv ./blink/target/blink-0.0.1-SNAPSHOT.jar /usr/bin/application.jar
