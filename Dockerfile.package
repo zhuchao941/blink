@@ -1,4 +1,4 @@
 FROM java:8
 MAINTAINER zhuchao 339357762@qq.com
 EXPOSE 80
-CMD java /usr/bin/application.jar
+CMD java -jar application.jar
