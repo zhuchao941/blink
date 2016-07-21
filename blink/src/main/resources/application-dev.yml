@@ -1,4 +1,4 @@
 spring:
-    profiles: qa
+    profiles: dev
 server:
-    testkey: qa
+    testkey: dev
