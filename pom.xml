@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 	<name>blink-parent</name>
 	<description>blink-parent</description>
-	
+
 	<modules>
 		<module>blink</module>
 		<module>blink-mapper</module>
@@ -16,6 +16,9 @@
 	</modules>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		
 		<mybatis.version>3.4.0</mybatis.version>
 	</properties>
 
